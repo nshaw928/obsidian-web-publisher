@@ -13,9 +13,6 @@ code
 
 paragraph *italics* **bold**
 This is a long line that wraps. This is a long line that wraps. This is a long line that wraps. This is a long line that wraps. This is a long line that wraps. This is a long line that wraps. This is a long line that wraps. This is a long line that wraps. This is a long line that wraps.
-Level 1
-    Level 2
-        Level 3
 text [link](externallink.com) text
 [[Page]]
 [link](externallink.com)
