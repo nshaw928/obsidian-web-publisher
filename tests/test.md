@@ -16,4 +16,4 @@ This is a long line that wraps. This is a long line that wraps. This is a long l
 text [link](externallink.com) text
 [[Page]]
 [link](externallink.com)
-![[Imagefile]]
+![image](me.png)
