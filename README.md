@@ -27,3 +27,20 @@ python3 publish.py
         - parse_structure_test()
         - parse_inline_test()
         - output_html_test()
+
+**Supported Structural MD Elements**
+- Headings 1-6
+- Images
+- Plain text
+- Code
+
+**Supported Inline MD Elements**
+- Links, internal and external
+- Bold
+- Italics
+- Bold and Italics
+
+**Future Planned Elements to support**
+- Quotes
+- Unordered Lists
+- Ordered Lists
