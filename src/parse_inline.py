@@ -52,6 +52,7 @@ def parse_inline(page):
                 tag_content = ''.join(temp)
 
             # Links
+            # TODO fix '%20's in the links
             temp = tag_content.split('](')
             if len(temp) != 1:
                 # Get lists of link + addresses

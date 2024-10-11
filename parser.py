@@ -2,16 +2,15 @@ from os import listdir
 from src.parse_structure import parse_structure
 from src.parse_inline import parse_inline
 
-def parse(md_path, html_path):
+def parse(md_path):
     '''
     Parses md file and outputs matching html file
 
     Args:
         md_path (str): Path to folder storing md files
-        html_path (str): Path to folder for output html files
 
     Output:
-        html files saved at html_path
+        website_page_content_list (list): A list where each element is a list containing each line of the webpage body as an element.
     '''
     for file in listdir(md_path):
         file_path = md_path + '/' + file
