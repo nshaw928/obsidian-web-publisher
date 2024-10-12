@@ -28,4 +28,7 @@ Currently, the app will convert a folder of markdown files into a folder of html
 - Ordered Lists
 
 ## Future Plans
-- Fully automate committing and 
+- Fully automate committing and pushing to Github
+- Update README to include better instructions for use
+- Clean setup.py and add more options
+- Write tests
