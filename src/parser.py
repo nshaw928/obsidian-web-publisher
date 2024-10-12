@@ -1,6 +1,6 @@
 from os import listdir
-from src.parse_structure import parse_structure
-from src.parse_inline import parse_inline
+from parse_functions.parse_structure import parse_structure
+from parse_functions.parse_inline import parse_inline
 
 def parse(md_path):
     '''
@@ -14,7 +14,5 @@ def parse(md_path):
     '''
     for file in listdir(md_path):
         file_path = md_path + '/' + file
+        print(file)
         print(parse_inline(parse_structure(file_path)))
-        print('')
-        print('')
-    

@@ -1,46 +1,31 @@
 # obsidian-web-publisher
-## Program Structure
-### Running the program
-To run the program, place the project folder in the obsidian vault. Edit the config.py file to add your website file paths. While in the directory, run publish.py to publish your site.
+## Running the program
+To run the project, clone the directory, and edit the config.py file to add your website file paths. While in the directory, run publish.py to publish your site to the web (last part still under development).
 ```
-cd path/to/your/website/vault
+git clone https://github.com/nshaw928/obsidian-web-publisher
+cd path/to/wherever/you/cloned/this/project
 python3 publish.py
 ```
-**Project Folder Structure**
-- publish.py
-    - publish()
-- config.py
-- README.md
-- LICENSE
-- .gitignore
-- src/
-    - setup.py
-        - load_config()
-    - parser.py
-        - parse_structure()
-        - parse_inline()
-        - output_html()
-    - publisher (BASH OR .PY?)
-- tests/
-    - test.md
-    - parser_tests.py
-        - parse_structure_test()
-        - parse_inline_test()
-        - output_html_test()
+### So what *can* it do right now?
+Currently, the app will convert a folder of markdown files into a folder of html files. You can easily add these files to your GH Pages website if desired. Rest assured, future updates are coming soon to fully automate this process!
 
-**Supported Structural MD Elements**
+## Markdown Element Support
+**Currently Supported Structural Markdown Elements**
 - Headings 1-6
 - Images
 - Plain text
 - Code
 
-**Supported Inline MD Elements**
+**Supported Inline Markdown Elements**
 - Links, internal and external
-- Bold
-- Italics
-- Bold and Italics
+- Italics (*)
+- Bold (**)
+- Bold Italics (***)
 
 **Future Planned Elements to support**
 - Quotes
 - Unordered Lists
 - Ordered Lists
+
+## Future Plans
+- Fully automate committing and 
