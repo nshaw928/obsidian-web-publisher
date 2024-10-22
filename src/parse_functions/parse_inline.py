@@ -52,7 +52,6 @@ def parse_inline(page):
                 tag_content = ''.join(temp)
 
             # Links
-            # TODO fix '%20's in the links
             temp = tag_content.split('](')
             if len(temp) != 1:
                 # Get lists of link + addresses
@@ -70,6 +69,7 @@ def parse_inline(page):
 
                     link_text = link_texts[i]
                     link_address = link_addresses[i]
+                    link_address = link_address.replace('%20', '-').replace(',', '').lower()
 
                     # Deal with internal Obsidian links
                     if len(link_address.split('.md')) == 2:

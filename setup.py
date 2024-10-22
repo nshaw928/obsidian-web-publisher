@@ -1,5 +1,5 @@
 def load_config ():
     md_path = '/edrive/Obsidian Websites/nicholasshaw.dev/md files'
-    html_path = '/edrive/Obsidian Websites/nicholasshaw.dev/html files'
+    website_path = '/edrive/Obsidian Websites/nicholasshaw.dev/website'
 
-    return md_path, html_path
+    return md_path, website_path

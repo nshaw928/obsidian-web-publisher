@@ -1,6 +1,6 @@
 from os import listdir
-from parse_functions.parse_structure import parse_structure
-from parse_functions.parse_inline import parse_inline
+from .parse_functions.parse_structure import parse_structure
+from .parse_functions.parse_inline import parse_inline
 
 def parse(md_path):
     '''
@@ -24,4 +24,5 @@ def parse(md_path):
 
         website.append(website_page_content_list)
 
+    print(website)
     return website

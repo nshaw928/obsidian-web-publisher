@@ -1,7 +1,11 @@
 from setup import load_config
 from src.parser import parse
-from publisher import publish
+from src.publisher import publish
 
-md_path, html_path = load_config()
+md_path, website_path = load_config()
 
-parse(md_path)
+# Parse MD and return HTML content
+website_content = parse(md_path)
+
+# Creates HTML files and (future) pushes to GitHub
+publish(website_content, website_path)
