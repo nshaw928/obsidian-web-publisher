@@ -6,11 +6,11 @@ def write_html(website_content, website_path):
         website_content (list): output of parse() function, containing website data.
         website_path (str): path to the repository where the website is stored locally.
     Output:
-        website_content is saved in html files in website_path/pages/
+        website_content is saved in html files in website_path/
     '''
 
     header_content = open('src/header_content.html')
-    print(header_content.readlines())
+    header_content = header_content.readlines()
 
     for i in range(len(website_content)):
         # Get page title
@@ -18,7 +18,7 @@ def write_html(website_content, website_path):
         file_name = title.lower().replace(' ', '-').replace(',', '') + '.html'
 
 
-        file = open(website_path + '/pages/' + file_name, 'w')
+        file = open(website_path + '/' + file_name, 'w')
         html_template = [['<!DOCTYPE html>\n', '<html>\n', '<header>\n'], # 0
                          ['</header>\n', '<body>\n'], # 1
                          ['</body>\n', '</html>\n']] # 2
