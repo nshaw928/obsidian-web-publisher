@@ -73,7 +73,7 @@ def parse_inline(page):
 
                     # Deal with internal Obsidian links
                     if len(link_address.split('.md')) == 2:
-                        link_address = 'nicholasshaw.dev/' + link_address.split('.')[0] + '.html'
+                        link_address = '/' + link_address.split('.')[0] + '.html'
 
                     # Wrap link with html tags
                     link = ['<a href="', link_address, '">', link_text, '</a>']
