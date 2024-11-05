@@ -32,3 +32,4 @@ Currently, the app will convert a folder of markdown files into a folder of html
 - Update README to include better instructions for use
 - Clean setup.py and add more options
 - Write tests
+- Add GUI to make it easy to set folder paths and publish

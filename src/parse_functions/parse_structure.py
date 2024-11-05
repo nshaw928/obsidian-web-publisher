@@ -42,7 +42,7 @@ def parse_structure(file_path):
         # Images
         elif line.startswith('!['):
             img = [char for char in line]
-            img_file = '/assets/' + ''.join(img[img.index('(')+1:img.index(')')])
+            img_file = './assets/' + ''.join(img[img.index('(')+1:img.index(')')])
             img_alt = ''.join(img[img.index('[')+1:img.index(']')])
             page_structure.append('<img src="' + img_file + '" alt="' + img_alt + '">')
 
